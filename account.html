@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - Дом Кофе</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Дом Кофе - Главная страница">
+                <img src="images/coffee-icon.png" alt="Иконка кофейни" class="logo-icon">
+                <span>Coffee</span>House
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="products.html">Ассортимент</a></li>
+        <li><a href="coffee-shop.html">Кофейня</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="login.html" id="login-link">Вход</a></li>
+        <li id="account-link" style="display: none;">
+            <a href="account.html">Личный кабинет</a>
+        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Личный кабинет</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section class="account-section" aria-labelledby="account-title">
+    <div class="container account-container">
+        <div class="account-header">
+            <h2 id="account-title">Личный кабинет</h2>
+            <button id="logout-btn" class="btn btn-secondary">
+                <i class="fas fa-sign-out-alt"></i> Выйти
+            </button>
+        </div>
+        
+        <div class="account-tabs">
+            <button class="tab-btn active" data-tab="user-info">Информация</button>
+            <button class="tab-btn" data-tab="cart">Корзина</button>
+            <button class="tab-btn" data-tab="orders">Заказы</button>
+        </div>
+        
+        <!-- Вкладка информации о пользователе -->
+        <div id="user-info" class="tab-content active">
+            <div class="user-info">
+                <h3>Информация о пользователе</h3>
+                <div class="user-details">
+                    <p><strong>Имя:</strong> <span id="user-name">Загрузка...</span></p>
+                    <p><strong>Email:</strong> <span id="user-email">Загрузка...</span></p>
+                    <p><strong>Дата регистрации:</strong> <span id="user-created">Загрузка...</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Вкладка корзины -->
+        <div id="cart" class="tab-content">
+            <div class="cart-section">
+                <h3>Корзина</h3>
+                <div class="cart-items" id="cart-items">
+                    <!-- Товары корзины будут здесь -->
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <strong>Итого: </strong><span id="cart-total-price">0</span> ₽
+                    </div>
+                    <button id="checkout-btn" class="btn" disabled>Оформить заказ</button>
+                </div>
+                <div class="empty-cart" id="empty-cart">
+                    <p>Ваша корзина пуста</p>
+                    <a href="products.html" class="btn">Перейти к покупкам</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Вкладка заказов -->
+        <div id="orders" class="tab-content">
+            <div class="order-history">
+                <h3>История заказов</h3>
+                <div class="no-orders" id="no-orders">
+                    <p>У вас пока нет заказов</p>
+                    <a href="products.html" class="btn">Перейти к покупкам</a>
+                </div>
+                <table class="order-table" id="order-table" style="display: none;">
+                    <thead>
+                        <tr>
+                            <th>№ Заказа</th>
+                            <th>Дата</th>
+                            <th>Товары</th>
+                            <th>Сумма</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody id="order-table-body">
+                        <!-- Заказы будут добавляться через JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Дом Кофе</h3>
+                    <p>Невозможно приготовить душевный кофе не вложив в него сердце.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Ассортимент</a></li>
+                        <li><a href="coffee-shop.html">Кофейня</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="login.html" id="footer-login-link">Вход</a></li>
+                        <li id="footer-account-link" style="display: none;"><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ассортимент</h3>
+                    <ul>
+                        <li><a href="products.html">Зерновой кофе</a></li>
+                        <li><a href="products.html">Молотый кофе</a></li>
+                        <li><a href="products.html">Капсулы</a></li>
+                        <li><a href="products.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Новосибирск, ул. Ленина, 12</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@domkofe.ru</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Дом Кофе. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/auth-utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/account.js"></script>
+
+
+</body>
+</html>

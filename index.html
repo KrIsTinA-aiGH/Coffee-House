@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дом Кофе - Фабрика кофе с душой</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Дом Кофе - Главная страница">
+                <img src="images/coffee-icon.png" alt="Иконка кофейни" class="logo-icon">
+                <span>Coffee</span>House
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="products.html">Ассортимент</a></li>
+        <li><a href="coffee-shop.html">Кофейня</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="login.html" id="login-link">Вход</a></li>
+        <li id="account-link" style="display: none;">
+            <a href="account.html">Личный кабинет</a>
+        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Главная</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-content">
+            <h1 id="hero-title">ФАБРИКА КОФЕ</h1>
+            <p>Невозможно приготовить душевный кофе не вложив в него сердце. Каждая чашка это шедевр, который мы создаем в момент заказа.</p>
+            <a href="products.html" class="btn">Отведай чашечку</a>
+        </div>
+    </section>
+
+    <section aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title">О нас</h2>
+            <div class="about-preview">
+                <div class="about-text">
+                    <p>Мы - команда энтузиастов, преданных искусству создания идеального кофе. Наша история началась с маленькой обжарочной в гараже, а сегодня мы предлагаем лучшие сорта кофе со всего мира.</p>
+                    <p>Наша философия проста: только качественные зерна, внимательная обжарка и бескомпромиссный подход к приготовлению каждой чашки.</p>
+                    <a href="about.html" class="btn">Узнать больше</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Кофе в кофейне">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" aria-labelledby="products-title">
+        <div class="container">
+            <h2 id="products-title">Ассортимент</h2>
+            <div class="product-categories">
+                <button class="category-btn active">Кофе месяца</button>
+                <button class="category-btn">Хиты продаж</button>
+                <button class="category-btn">Новинки</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" alt="Эфиопия Иргачефф">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Эфиопия Иргачефф</h3>
+                        <p class="product-description">Яркий цветочный аромат с нотами цитрусов и ягод.</p>
+                        <p class="product-price">750 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://ir-5.ozone.ru/s3/multimedia-a/wc1000/6663371194.jpg" alt="Колумбия Супремо">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Колумбия Супремо</h3>
+                        <p class="product-description">Сбалансированный вкус с ореховыми и шоколадными нотами.</p>
+                        <p class="product-price">690 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Гватемала Антьгуа">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Гватемала Антьгуа</h3>
+                        <p class="product-description">Сложный вкус с фруктовыми нотами и яркой кислотностью.</p>
+                        <p class="product-price">820 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="products.html" class="btn">Весь ассортимент</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="coffee-shop" aria-labelledby="coffee-shop-title">
+        <div class="container coffee-shop-content">
+            <h2 id="coffee-shop-title">Наша кофейня</h2>
+            <p>Приходите в нашу уютную кофейню, чтобы насладиться идеальной чашкой кофе, приготовленной с любовью нашими бариста. У нас всегда свежая выпечка и приятная атмосфера.</p>
+            <p>Первая чашка кофе со скидкой 20% для новых гостей!</p>
+            <a href="coffee-shop.html" class="btn">Забронировать стол</a>
+        </div>
+    </section>
+
+    <section id="contacts" aria-labelledby="contacts-title">
+        <div class="container">
+            <h2 id="contacts-title">Контакты</h2>
+            <div class="contacts">
+                <div class="contact-info">
+                    <h3>Наши контакты</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> г. Новосибирск, ул. Ленина, 12</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-clock" aria-hidden="true"></i> Пн-Пт: 8:00-22:00, Сб-Вс: 9:00-23:00</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@domkofe.ru</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f93a14c70c63d681eb3d878e3a8d6d6e4d5f9b2b0b0d8f0b5b4d9e5d5f5b4d9e&amp;source=constructor" title="Карта кофейни" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Дом Кофе</h3>
+                    <p>Невозможно приготовить душевный кофе не вложив в него сердце.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Ассортимент</a></li>
+                        <li><a href="coffee-shop.html">Кофейня</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="login.html" id="footer-login-link">Вход</a></li>
+                        <li id="footer-account-link" style="display: none;"><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ассортимент</h3>
+                    <ul>
+                        <li><a href="products.html">Зерновой кофе</a></li>
+                        <li><a href="products.html">Молотый кофе</a></li>
+                        <li><a href="products.html">Капсулы</a></li>
+                        <li><a href="products.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Новосибирск, ул. Ленина, 12</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@domkofe.ru</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Дом Кофе. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/auth-utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

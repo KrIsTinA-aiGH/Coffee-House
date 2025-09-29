@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Дом Кофе</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Дом Кофе - Главная страница">
+                <img src="images/coffee-icon.png" alt="Иконка кофейни" class="logo-icon">
+                <span>Coffee</span>House
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="products.html">Ассортимент</a></li>
+        <li><a href="coffee-shop.html">Кофейня</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="login.html" id="login-link">Вход</a></li>
+        <li id="account-link" style="display: none;">
+            <a href="account.html">Личный кабинет</a>
+        </li>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">О нас</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title">О нас</h2>
+            
+            <div class="about-history" aria-labelledby="history-title">
+                <h3 id="history-title">Наша история</h3>
+                <div class="history-content">
+                    <div class="history-text">
+                        <p>Всё началось в 2010 году, когда два друга-бариста решили, что хотят делиться своим представлением об идеальном кофе с другими. Начав с небольшой обжарочной в гараже, сегодня мы превратились в полноценную кофейню с собственной фабрикой обжарки.</p>
+                        <p>За эти годы мы не изменили нашему главному принципу: кофе должен быть свежим, качественным и приготовленным с любовью. Мы лично отбираем зерна на плантациях, следим за процессом обжарки и обучаем наших бариста самым современным техникам приготовления.</p>
+                    </div>
+                    <div class="history-image">
+                        <img src="https://images.unsplash.com/photo-1463797221720-6b07e6426c24?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Первая кофейня">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="roasting-philosophy" aria-labelledby="philosophy-title">
+                <h3 id="philosophy-title">Философия обжарки</h3>
+                <div class="philosophy-content">
+                    <div class="philosophy-image">
+                        <img src="https://pics.rbc.ru/v2_companies_s3/resized/960xH/media/company_press_release_image/69d3e119-0c15-4e75-ae35-2722e9020d26.jpg" alt="Процесс обжарки">
+                    </div>
+                    <div class="philosophy-text">
+                        <p>Мы работаем напрямую с фермерами из Эфиопии, Колумбии, Бразилии и других стран, чтобы обеспечить наилучшее качество зерен. Наш обжарщик с 15-летним опытом подбирает степень обжарки для каждого сорта индивидуально.</p>
+                        <p>Мы предпочитаем светлую и среднюю обжарку, которая позволяет раскрыть истинный вкус и аромат кофе. Наша цель - подчеркнуть уникальные характеристики каждого сорта, а не скрыть их за горечью темной обжарки.</p>
+                        <p>Все партии проходят строгий контроль качества. Мы тестируем каждую партию зерен перед обжаркой и после, чтобы гарантировать стабильно высокое качество нашего кофе.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team" aria-labelledby="team-title">
+                <h3 id="team-title">Наша команда</h3>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Алексей Петров, Основатель">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Алексей Петров</h4>
+                            <p class="member-role">Основатель, главный обжарщик</p>
+                            <p>В кофейной индустрии более 15 лет. Автор уникальных смесей и методик обжарки.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://avatars.mds.yandex.net/get-yapic/45848/PlXdkqKQCNw4ob5C2tUgsRvIY-1/orig" alt="Мария Иванова, Главный бариста">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Мария Иванова</h4>
+                            <p class="member-role">Главный бариста</p>
+                            <p>Чемпион России по латте-арт 2019. Обучает новых бариста искусству приготовления кофе.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Ольга Сидорова, Управляющая кофейни">
+                        </div>
+                        <div class="member-info">
+                            <h4 class="member-name">Ольга Сидорова</h4>
+                            <p class="member-role">Управляющая кофейни</p>
+                            <p>Создает уютную атмосферу и следит за тем, чтобы каждый гость чувствовал себя как дома.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="reviews" aria-labelledby="reviews-title">
+                <h3 id="reviews-title">Отзывы</h3>
+                <div class="review-cards">
+                    <div class="review-card">
+                        <p class="review-text">Лучший кофе в городе! Особенно люблю их Эфиопию Иргачефф - неповторимый вкус с цветочными и цитрусовыми нотами.</p>
+                        <p class="review-author">Екатерина В.</p>
+                        <p class="review-source">Google Reviews</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">Обожаю эту кофейню! Здесь готовят мой любимый капучино с идеальной пенкой. А атмосфера просто волшебная.</p>
+                        <p class="review-author">Дмитрий С.</p>
+                        <p class="review-source">Instagram</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-text">Покупаю зерновой кофе здесь уже больше года. Качество всегда на высоте, ассортимент постоянно пополняется интересными новинками.</p>
+                        <p class="review-author">Анна К.</p>
+                        <p class="review-source">VKontakte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Дом Кофе</h3>
+                    <p>Невозможно приготовить душевный кофе не вложив в него сердце.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Ассортимент</a></li>
+                        <li><a href="coffee-shop.html">Кофейня</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="login.html" id="footer-login-link">Вход</a></li>
+                        <li id="footer-account-link" style="display: none;"><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ассортимент</h3>
+                    <ul>
+                        <li><a href="products.html">Зерновой кофе</a></li>
+                        <li><a href="products.html">Молотый кофе</a></li>
+                        <li><a href="products.html">Капсулы</a></li>
+                        <li><a href="products.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Новосибирск, ул. Ленина, 12</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@domkofe.ru</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Дом Кофе. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/auth-utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня - Дом Кофе</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Дом Кофе - Главная страница">
+                <img src="images/coffee-icon.png" alt="Иконка кофейни" class="logo-icon">
+                <span>Coffee</span>House
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="products.html">Ассортимент</a></li>
+        <li><a href="coffee-shop.html">Кофейня</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="login.html" id="login-link">Вход</a></li>
+        <li id="account-link" style="display: none;">
+            <a href="account.html">Личный кабинет</a>
+        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Кофейня</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section aria-labelledby="coffee-shop-title">
+        <div class="container">
+            <h2 id="coffee-shop-title">Наша кофейня</h2>
+            
+            <div class="coffee-shop" style="margin-bottom: 60px;">
+                <div class="container">
+                    <p>Приходите в нашу уютную кофейню, чтобы насладиться идеальной чашкой кофе, приготовленной с любовью нашими бариста. У нас всегда свежая выпечка и приятная атмосфера.</p>
+                    <p>Первая чашка кофе со скидкой 20% для новых гостей!</p>
+                </div>
+            </div>
+            
+            <div class="menu" aria-labelledby="menu-title">
+                <h3 id="menu-title">Меню</h3>
+                <div class="menu-categories">
+                    <button class="menu-category-btn active">Кофе</button>
+                    <button class="menu-category-btn">Чай</button>
+                    <button class="menu-category-btn">Десерты</button>
+                    <button class="menu-category-btn">Выпечка</button>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=a2981c21cb017585796520c266e058cf_l-4011519-images-thumbs&n=13" alt="Эспрессо">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-title">
+                                <span>Эспрессо</span>
+                                <span class="menu-item-price">180 ₽</span>
+                            </div>
+                            <p class="menu-item-description">Классический крепкий кофе, приготовленный под давлением.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://cafeto.ru/upload/medialibrary/589/hl05qt3zlucl1maotqctq6y2rrjvd48z.jpg" alt="Капучино">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-title">
+                                <span>Капучино</span>
+                                <span class="menu-item-price">250 ₽</span>
+                            </div>
+                            <p class="menu-item-description">Идеальное соотношение эспрессо, молока и молочной пены.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://static29.tgcnt.ru/posts/_0/85/85e69d06722157ff7cb490c6df247306.jpg" alt="Латте">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-title">
+                                <span>Латте</span>
+                                <span class="menu-item-price">270 ₽</span>
+                            </div>
+                            <p class="menu-item-description">Нежный кофейный напиток с большим количеством вспененного молока.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://galata-restaurant.ru/wp-content/uploads/2022/11/kofe-i-kofejnye-zerna.jpg" alt="Американо">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-title">
+                                <span>Американо</span>
+                                <span class="menu-item-price">200 ₽</span>
+                            </div>
+                            <p class="menu-item-description">Эспрессо с добавлением горячей воды, менее концентрированный.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://www.coffee-kiosk.ru/upload/iblock/b54/daik9mtm2jjkx53je577za5af0y2ipq9/i.jpeg" alt="Раф кофе">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-title">
+                                <span>Раф кофе</span>
+                                <span class="menu-item-price">300 ₽</span>
+                            </div>
+                            <p class="menu-item-description">Нежный кофейный напиток на основе эспрессо, сливок и ванильного сахара.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-image">
+                            <img src="https://avatars.mds.yandex.net/i?id=c68a139acea8566d598d8123366e60be_l-9710160-images-thumbs&n=13" alt="Мокко">
+                        </div>
+                        <div class="menu-item-info">
+                            <div class="menu-item-title">
+                                <span>Мокко</span>
+                                <span class="menu-item-price">320 ₽</span>
+                            </div>
+                            <p class="menu-item-description">Изысканный напиток, сочетающий в себе эспрессо, горячее молоко и шоколад.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="online-order" aria-labelledby="online-order-title">
+                <h3 id="online-order-title">Онлайн-заказ</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Адрес доставки</label>
+                        <input type="text" id="address" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="order">Ваш заказ</label>
+                        <textarea id="order" rows="4" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Заказать</button>
+                </form>
+            </div>
+            
+            <div class="reservation" aria-labelledby="reservation-title">
+                <h3 id="reservation-title">Забронировать стол</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="reserve-name">Ваше имя</label>
+                        <input type="text" id="reserve-name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="reserve-phone">Телефон</label>
+                        <input type="tel" id="reserve-phone" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="reserve-date">Дата</label>
+                        <input type="date" id="reserve-date" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="reserve-time">Время</label>
+                        <input type="time" id="reserve-time" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="reserve-guests">Количество гостей</label>
+                        <input type="number" id="reserve-guests" min="1" max="10" required aria-required="true">
+                    </div>
+                    <button type="submit" class="btn">Забронировать</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Дом Кофе</h3>
+                    <p>Невозможно приготовить душевный кофе не вложив в него сердце.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Ассортимент</a></li>
+                        <li><a href="coffee-shop.html">Кофейня</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="login.html" id="footer-login-link">Вход</a></li>
+                        <li id="footer-account-link" style="display: none;"><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ассортимент</h3>
+                    <ul>
+                        <li><a href="products.html">Зерновой кофе</a></li>
+                        <li><a href="products.html">Молотый кофе</a></li>
+                        <li><a href="products.html">Капсулы</a></li>
+                        <li><a href="products.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Новосибирск, ул. Ленина, 12</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@domkofe.ru</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Дом Кофе. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/auth-utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

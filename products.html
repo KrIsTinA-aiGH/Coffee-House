@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ассортимент - Дом Кофе</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Дом Кофе - Главная страница">
+                <img src="images/coffee-icon.png" alt="Иконка кофейни" class="logo-icon">
+                <span>Coffee</span>House
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="products.html">Ассортимент</a></li>
+        <li><a href="coffee-shop.html">Кофейня</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="login.html" id="login-link">Вход</a></li>
+        <li id="account-link" style="display: none;">
+            <a href="account.html">Личный кабинет</a>
+        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Ассортимент</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section class="products">
+        <div class="container">
+            <h2>Наш ассортимент</h2>
+            
+            <div class="filters">
+                <button class="filter-btn active">Все</button>
+                <button class="filter-btn">Африка</button>
+                <button class="filter-btn">Южная Америка</button>
+                <button class="filter-btn">Центральная Америка</button>
+                <button class="filter-btn">Азия</button>
+                <button class="filter-btn">Молотый</button>
+                <button class="filter-btn">Капсулы</button>
+                <button class="filter-btn">Аксессуары</button>
+            </div>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://static.insales-cdn.com/images/products/1/6682/514415130/yirgacheffe.jpg" alt="Эфиопия Иргачефф">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Эфиопия Иргачефф</h3>
+                        <p class="product-description">Страна: Эфиопия<br>Регион: Сидамо<br>Вкус: яркий, цветочный, с нотами цитрусов и ягод</p>
+                        <p class="product-description">Обжарка: светлая</p>
+                        <p class="product-price">750 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://ir-5.ozone.ru/s3/multimedia-a/wc1000/6663371194.jpg" alt="Колумбия Супремо">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Колумбия Супремо</h3>
+                        <p class="product-description">Страна: Колумбия<br>Регион: Андины<br>Вкус: сбалансированный, с ореховыми и шоколадными нотами</p>
+                        <p class="product-description">Обжарка: средняя</p>
+                        <p class="product-price">690 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Гватемала Антьгуа">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Гватемала Антьгуа</h3>
+                        <p class="product-description">Страна: Гватемала<br>Регион: Антигуа<br>Вкус: сложный, с фруктовыми нотами и яркой кислотностью</p>
+                        <p class="product-description">Обжарка: светлая</p>
+                        <p class="product-price">820 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://diamondelectric.ru/images/3345/3344915/kofe_v_zernah_geografiya_vkysa_braziliya_santos_1.jpg" alt="Бразилия Сантос">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Бразилия Сантос</h3>
+                        <p class="product-description">Страна: Бразилия<br>Регион: Минас-Жерайс<br>Вкус: мягкий, с ореховыми и шоколадными нотами</p>
+                        <p class="product-description">Обжарка: средняя</p>
+                        <p class="product-price">620 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://basket-01.wbbasket.ru/vol122/part12242/12242358/images/big/1.webp" alt="Кения АА">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Кения АА</h3>
+                        <p class="product-description">Страна: Кения<br>Регион: Ньери<br>Вкус: яркий, с нотами черной смородины и цитрусов</p>
+                        <p class="product-description">Обжарка: светлая</p>
+                        <p class="product-price">780 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://cdn1.ozone.ru/s3/multimedia-t/c600/6252599141.jpg" alt="Суматра Манделинг">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Суматра Манделинг</h3>
+                        <p class="product-description">Страна: Индонезия<br>Регион: Суматра<br>Вкус: плотный, землистый, с пряными нотами</p>
+                        <p class="product-description">Обжарка: темная</p>
+                        <p class="product-price">710 ₽ / 250 г</p>
+                        <a href="#" class="btn">В корзину</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Кнопка добавления товара -->
+<div class="container" style="text-align: center; margin-top: 30px;">
+   <button id="add-product-btn" class="btn btn-secondary" style="display: none;">
+    <i class="fas fa-plus"></i> Добавить товар
+</button>
+</div>
+
+<!-- Модальное окно для добавления товара -->
+<div id="add-product-modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Добавить новый товар</h3>
+            <span class="close">&times;</span>
+        </div>
+        <form id="add-product-form">
+            <div class="form-group">
+                <label for="product-name">Название товара:</label>
+                <input type="text" id="product-name" placeholder="Например: Эфиопия Иргачефф" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-description">Описание:</label>
+                <textarea id="product-description" placeholder="Страна: Эфиопия&#10;Регион: Сидамо&#10;Вкус: яркий, цветочный..." rows="4" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-price">Цена (₽):</label>
+                <input type="number" id="product-price" placeholder="750" min="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-weight">Вес (г):</label>
+                <input type="number" id="product-weight" placeholder="250" min="0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-image">URL изображения:</label>
+                <input type="url" id="product-image" placeholder="https://example.com/image.jpg" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-category">Категория:</label>
+                <select id="product-category" required>
+                    <option value="">Выберите категорию</option>
+                    <option value="Африка">Африка</option>
+                    <option value="Южная Америка">Южная Америка</option>
+                    <option value="Центральная Америка">Центральная Америка</option>
+                    <option value="Азия">Азия</option>
+                    <option value="Молотый">Молотый</option>
+                    <option value="Капсулы">Капсулы</option>
+                    <option value="Аксессуары">Аксессуары</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="product-roast">Обжарка:</label>
+                <select id="product-roast" required>
+                    <option value="">Выберите обжарку</option>
+                    <option value="светлая">Светлая</option>
+                    <option value="средняя">Средняя</option>
+                    <option value="темная">Темная</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn" id="submit-product-btn">
+                <i class="fas fa-plus"></i> Добавить товар
+            </button>
+        </form>
+    </div>
+</div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Дом Кофе</h3>
+                    <p>Невозможно приготовить душевный кофе не вложив в него сердце.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Ассортимент</a></li>
+                        <li><a href="coffee-shop.html">Кофейня</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ассортимент</h3>
+                    <ul>
+                        <li><a href="products.html">Зерновой кофе</a></li>
+                        <li><a href="products.html">Молотый кофе</a></li>
+                        <li><a href="products.html">Капсулы</a></li>
+                        <li><a href="products.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Новосибирск</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@domkofe.ru</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Дом Кофе. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+<script src="js/auth-utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Дом Кофе</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="Дом Кофе - Главная страница">
+                <img src="images/coffee-icon.png" alt="Иконка кофейни" class="logo-icon">
+                <span>Coffee</span>House
+            </a>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="products.html">Ассортимент</a></li>
+        <li><a href="coffee-shop.html">Кофейня</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="login.html" id="login-link">Вход</a></li>
+        <li id="account-link" style="display: none;">
+            <a href="account.html">Личный кабинет</a>
+        </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <nav aria-label="breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+            </ol>
+        </div>
+    </nav>
+
+    <section aria-labelledby="contacts-title">
+        <div class="container">
+            <h2 id="contacts-title">Контакты</h2>
+            <div class="contacts">
+                <div class="contact-info">
+                    <h3>Наши контакты</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> г. Новосибирск, ул. Ленина, 12</p>
+                        <p><i class="fas fa-phone" aria-hidden="true"></i> +7 (495) 123-45-67</p>
+                        <p><i class="fas fa-clock" aria-hidden="true"></i> Пн-Пт: 8:00-22:00, Сб-Вс: 9:00-23:00</p>
+                        <p><i class="fas fa-envelope" aria-hidden="true"></i> info@domkofe.ru</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0f93a14c70c63d681eb3d878e3a8d6d6e4d5f9b2b0b0d8f0b5b4d9e5d5f5b4d9e&amp;source=constructor" title="Карта кофейни" frameborder="0"></iframe>
+                </div>
+            </div>
+            
+            <div class="online-order" style="margin-top: 60px;" aria-labelledby="contact-form-title">
+                <h3 id="contact-form-title">Форма обратной связи</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="contact-name">Ваше имя</label>
+                        <input type="text" id="contact-name" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Тема</label>
+                        <input type="text" id="contact-subject" required aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Сообщение</label>
+                        <textarea id="contact-message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer aria-label="Подвал сайта">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Дом Кофе</h3>
+                    <p>Невозможно приготовить душевный кофе не вложив в него сердце.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="products.html">Ассортимент</a></li>
+                        <li><a href="coffee-shop.html">Кофейня</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="login.html" id="footer-login-link">Вход</a></li>
+                        <li id="footer-account-link" style="display: none;"><a href="account.html">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ассортимент</h3>
+                    <ul>
+                        <li><a href="products.html">Зерновой кофе</a></li>
+                        <li><a href="products.html">Молотый кофе</a></li>
+                        <li><a href="products.html">Капсулы</a></li>
+                        <li><a href="products.html">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>г. Новосибирск, ул. Ленина, 12</p>
+                    <p>+7 (495) 123-45-67</p>
+                    <p>info@domkofe.ru</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Дом Кофе. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/auth-utils.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
